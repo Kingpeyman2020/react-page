@@ -1,0 +1,58 @@
+#div-container{
+    background-color: #282c34;
+    height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+    h4{
+        font-size: large !important;
+    }
+
+    a{
+        font-size: medium !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    img{
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    img{
+        width: 70% !important;
+    }
+}
+
+h4{
+    color: white;
+}
+
+a:hover{
+    color: #398fa7 !important;
+}
+
+a{
+    transition: color .4s;
+    color: #61dafb;
+    font-size: 22px;
+}
+
+@keyframes char{
+    from{
+        transform: rotateZ(0deg);
+    } to {
+        transform: rotateZ(360deg);
+    }
+}
+
+img{
+    animation: char 15s infinite linear;
+    width: 40%;
+    cursor: pointer;
+}
+
+span{
+    color: #d63384;
+}
